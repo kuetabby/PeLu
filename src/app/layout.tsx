@@ -9,7 +9,8 @@ import "./globals.css";
 
 const app_title = "PepeLuBu";
 const app_name = "PELU";
-const description = "";
+const description =
+  "$PELU - where the playful charm of Pepe The Frog meets the legendary spirit of LuBu";
 
 export const metadata: Metadata = {
   title: app_title,
