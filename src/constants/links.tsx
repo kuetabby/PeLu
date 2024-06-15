@@ -1,7 +1,5 @@
-export const contractAddress = "-";
+export const contractAddress = "DM417bBjCk8PPoPL64cHwNSEN9hYbRyaRY2pmh6iedna";
 export const pairAddress = "-";
-
-// DM417bBjCk8PPoPL64cHwNSEN9hYbRyaRY2pmh6iedna
 
 export const socialsLink = {
   whitepaper: "/",
@@ -13,7 +11,7 @@ export const socialsLink = {
 
 export const findUsLink = {
   dextools: `http://dextools.io/app/ether/pair-explorer/${pairAddress}`,
-  dexscreener: `https://dexscreener.com/solana/${contractAddress}`,
+  dexscreener: `https://dexscreener.com/solana/c7rprvhvw6n3kyucv8ayat5vl11pvvjsq8oge6rowgym`,
   solidproof: "https://app.solidproof.io/projects/",
   etherscan: `https://etherscan.io/token/${contractAddress}`,
   uniswap: `https://app.uniswap.org/tokens/ethereum/${contractAddress}`,
