@@ -22,11 +22,11 @@ import HeroApp from "@/assets/pelu-hero.png";
 
 // import HeroApp from "@/assets/hero-app.png";
 // import MapApp from "@/assets/map-app.png";
-import DextoolsLogo from "@/assets/logo-dextools.png";
-import EtherscanLogo from "@/assets/logo-etherscan.png";
+// import DextoolsLogo from "@/assets/logo-dextools.png";
+// import EtherscanLogo from "@/assets/logo-etherscan.png";
 import TwitterLogo from "@/assets/logo-twitter.png";
 import TelegramLogo from "@/assets/logo-telegram.png";
-// import Dexscreener from "@/assets/dexscreener.png";
+import DexscreenerLogo from "@/assets/logo-dexscreener.png";
 // import Uniswap from "@/assets/uniswap.png";
 // import Solidproof from "@/assets/solidproof.png";
 // import Coingecko from "@/assets/coingecko.png";
@@ -104,7 +104,7 @@ const Home: React.FC<Props> = () => {
     <div className="homepage-container">
       <div id="welcome" />
       <div ref={welcomeRef} className="w-full h-full relative">
-        <Link
+        {/* <Link
           href={findUsLink.uniswap}
           target="_blank"
           rel="noopener noreferrer"
@@ -116,7 +116,7 @@ const Home: React.FC<Props> = () => {
           >
             BUY NOW
           </Button>
-        </Link>
+        </Link> */}
         <Image
           src={BannerApp}
           alt="pelu-banner"
@@ -167,18 +167,18 @@ const Home: React.FC<Props> = () => {
             <br />
             <div className="w-full flex flex-wrap justify-center lg:justify-start items-center text-white m-auto gap-4">
               <Link
-                href={findUsLink.dextools}
+                href={findUsLink.dexscreener}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-16 hover:!text-primary"
               >
                 <Image
-                  src={DextoolsLogo}
-                  alt="dextools"
+                  src={DexscreenerLogo}
+                  alt="dexscreener"
                   className="w-full h-full"
                 />
               </Link>
-              <Link
+              {/* <Link
                 href={findUsLink.etherscan}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -189,7 +189,7 @@ const Home: React.FC<Props> = () => {
                   alt="etherscan"
                   className="w-full h-full"
                 />
-              </Link>
+              </Link> */}
               <Link
                 href={socialsLink.telegram}
                 target="_blank"
