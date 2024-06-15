@@ -1,6 +1,8 @@
 export const contractAddress = "-";
 export const pairAddress = "-";
 
+// DM417bBjCk8PPoPL64cHwNSEN9hYbRyaRY2pmh6iedna
+
 export const socialsLink = {
   whitepaper: "/",
   twitter: "https://x.com/PepeLuBuOnSOL",
