@@ -136,7 +136,7 @@ const Home: React.FC<Props> = () => {
         </div>
 
         <div className="text-5xl text-center mt-10 mb-20">
-          {contractAddress}
+          CA: <span className="text-pelu-red">{contractAddress}</span>
         </div>
 
         <div className="w-full flex flex-wrap justify-between px-2 lg:px-0">
