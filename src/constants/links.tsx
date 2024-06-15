@@ -2,10 +2,10 @@ export const contractAddress = "-";
 export const pairAddress = "-";
 
 export const socialsLink = {
-  whitepaper: "https://injection-protocol.gitbook.io/injectionprotocol",
-  twitter: "https://x.com/",
-  telegram: "https://t.me/",
-  medium: "https://medium.com/@injectionprotocolofficial",
+  whitepaper: "/",
+  twitter: "https://x.com/PepeLuBuOnSOL",
+  telegram: "https://t.me/Pepe_Lubu",
+  medium: "/",
   email: "mailto:team@pepelubu.meme",
 };
 
