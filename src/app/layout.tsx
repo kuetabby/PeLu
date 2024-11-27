@@ -9,7 +9,7 @@ import "./globals.css";
 
 const app_title = "$DRACONIS";
 const app_name = "Draconis";
-const description = "";
+const description = "a cautionary tale about the consequences of greed";
 
 export const metadata: Metadata = {
   title: app_title,
