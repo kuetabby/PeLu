@@ -45,7 +45,7 @@ const AppFooter: React.FC<Props> = () => {
           </Link>
         </div> */}
 
-        <div className="w-full md:w-3/5 flex flex-wrap justify-center items-center text-white m-auto gap-4 z-50 relative">
+        {/* <div className="w-full md:w-3/5 flex flex-wrap justify-center items-center text-white m-auto gap-4 z-50 relative">
           <Link
             href={socialsLink.telegram}
             target="_blank"
@@ -70,7 +70,7 @@ const AppFooter: React.FC<Props> = () => {
               className="w-full h-full cursor-pointer"
             />
           </Link>
-        </div>
+        </div> */}
 
         <div className="w-full flex justify-center items-center py-2 md:py-4 text-white z-30">
           <div className="text-base font-semibold">
