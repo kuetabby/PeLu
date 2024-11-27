@@ -1,4 +1,4 @@
-export const contractAddress = "-";
+export const contractAddress = "BoXggKBnYDCeZxSRj66a2rc6yvbYuphZeugoAzbWpump";
 export const pairAddress = "-";
 
 export const socialsLink = {
