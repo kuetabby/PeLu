@@ -8,7 +8,7 @@ import Footer from "./Footer";
 
 import Provider from "@/library/Provider";
 
-import { misaki } from "@/utils/font";
+import { alice } from "@/utils/font";
 // import AppBackground from "@/assets/app-bg.png";
 
 import "./style.css";
@@ -19,7 +19,7 @@ const BaseLayout: React.FC<Props> = ({ children }) => {
   return (
     <Provider>
       {/* <Navbar /> */}
-      <main className={clsx("base-main-container", misaki.className)}>
+      <main className={clsx("base-main-container", alice.className)}>
         {/* <Image
           src={AppBackground}
           alt="roadmap"

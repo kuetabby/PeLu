@@ -17,8 +17,8 @@ import { useIsMounted } from "@/hooks/useIsMounted";
 
 // import { FeatureArrow } from "@/utils/Icon/arrow";
 
-import BannerApp from "@/assets/pelu-banner.png";
-import HeroApp from "@/assets/pelu-hero.png";
+import BannerApp from "@/assets/draconis-banner.jpg";
+import HeroApp from "@/assets/draconis-hero.jpg";
 
 // import HeroApp from "@/assets/hero-app.png";
 // import MapApp from "@/assets/map-app.png";
@@ -81,16 +81,16 @@ const Home: React.FC<Props> = () => {
     }
   }, [isMounted]);
 
-  useEffect(() => {
-    if (isMounted) {
-      const observer = new IntersectionObserver((entries) => {
-        const entry = entries[0];
-        setIsTokensVisible(entry.isIntersecting);
-      });
+  // useEffect(() => {
+  //   if (isMounted) {
+  //     const observer = new IntersectionObserver((entries) => {
+  //       const entry = entries[0];
+  //       setIsTokensVisible(entry.isIntersecting);
+  //     });
 
-      observer.observe(tokensRef.current as HTMLDivElement);
-    }
-  }, [isMounted]);
+  //     observer.observe(tokensRef.current as HTMLDivElement);
+  //   }
+  // }, [isMounted]);
 
   if (!isMounted) {
     return (
@@ -104,19 +104,6 @@ const Home: React.FC<Props> = () => {
     <div className="homepage-container">
       <div id="welcome" />
       <div ref={welcomeRef} className="w-full h-full relative">
-        {/* <Link
-          href={findUsLink.uniswap}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="w-auto mr-2 md:mr-4 absolute right-0 top-4"
-        >
-          <Button
-            className="w-full text-white bg-pelu-red hover:bg-pelu-green active:bg-pelu-green focus:bg-pelu-green lg:p-6"
-            // leftIcon={<DollarOutlined style={{ fontSize: "1.5em" }} />}
-          >
-            BUY NOW
-          </Button>
-        </Link> */}
         <Image
           src={BannerApp}
           alt="pelu-banner"
@@ -127,42 +114,50 @@ const Home: React.FC<Props> = () => {
       <div id="about" className="h-20 sm:h-24 relative z-30" />
       <div ref={aboutRef} className="homepage-body">
         <div className="text-6xl font-bold text-center text-pelu-red">
-          PepeLuBu
+          Draconis
         </div>
-        <div className="text-4xl text-center mt-20 mb-10">
-          <span className="text-pelu-red font-bold">$PELU</span> where the
+        <div className="sm:mx-4 md:mx-6 lg:mx-10 text-3xl text-center mt-14 mb-10">
+          {/* <span className="text-pelu-red font-bold">$DRACONIS</span> where the
           cheeky charisma of Pepe meets the legendary flair of Lu Bu, creating a
-          fusion of fun and folklore.
+          fusion of fun and folklore. */}
+          <span className="text-pelu-red font-bold">$DRACONIS</span> is said to
+          be an enormous amphibian, far larger than any known species. Its
+          defining feature is its dragon-like scales that shimmer in hues of
+          green, gold, or sapphire. These scales provide both protection and an
+          aura of otherworldly majesty.
         </div>
 
-        <div className="text-5xl text-center mt-10 mb-20">
+        <div className="text-2xl text-center mt-10 mb-20">
           CA: <span className="text-pelu-red">{contractAddress}</span>
         </div>
 
-        <div className="w-full flex flex-wrap justify-between px-2 lg:px-0">
+        <div className="w-full flex flex-wrap justify-between px-2 lg:px-6">
           <div className="w-full lg:w-[47.5%]">
             <div className="border-2 border-pelu-red rounded-md">
-              <Image src={HeroApp} alt="pelu-hero" />
+              <Image
+                src={HeroApp}
+                alt="pelu-hero"
+                className="h-[400px] lg:h-[700px]"
+              />
             </div>
           </div>
 
           <div className="w-full lg:w-[47.5%]">
             <div className="w-full text-3xl mt-4 lg:mt-0">
-              <span className="text-pelu-red font-bold">PEPELUBU</span> brings
-              together the whimsical charm of Pepe The Frog with the legendary
-              valor of Lu Bu, creating a dynamic fusion that celebrates both
-              modern meme culture and timeless heroism.
+              <span className="text-pelu-red font-bold">$DRACONIS</span> could
+              be seen as a representation of environmental protection or as a
+              cautionary tale about the consequences of greed.
             </div>
             <br />
             <br />
             <div className="w-full text-3xl">
               <div className="text-4xl text-center sm:text-left font-bold mb-4">
-                Join the <span className="text-pelu-red">PEPELUBU</span>{" "}
-                Adventure
+                Join the <span className="text-pelu-red">$DRACONIS</span>{" "}
+                Movement
               </div>
-              <span className="text-pelu-red font-bold">$PELU</span> is more
-              than just a concept. it’s a journey that invites you to partake in
-              a blend of history, humor, and heroism.
+              Step into a world where myth meets mission. By joining us, you
+              become part of a growing community dedicated to protecting the
+              balance of our world—both environmental and ethical.
             </div>
             <br />
             <div className="w-full flex flex-wrap justify-center lg:justify-start items-center text-white m-auto gap-4">
@@ -170,7 +165,7 @@ const Home: React.FC<Props> = () => {
                 href={findUsLink.dexscreener}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-16 hover:!text-primary"
+                className="w-12 hover:!text-primary"
               >
                 <Image
                   src={DexscreenerLogo}
@@ -219,29 +214,6 @@ const Home: React.FC<Props> = () => {
         </div>
       </div>
 
-      <div id="tokenomics" className="h-24 sm:h-36 relative z-30" />
-      <div ref={tokensRef} className="homepage-body">
-        <div className="text-6xl font-bold text-center text-pelu-red">
-          TOKENOMICS
-        </div>
-
-        <div className="w-full md:w-11/12 xl:w-4/5 text-center flex flex-wrap justify-center items-center gap-y-8 mx-auto mt-12">
-          <div className="w-full sm:w-1/2 lg:w-1/3">
-            <div className={`app-title text-5xl mb-2`}>Total Supply</div>
-            <div className={`text-3xl font-bold text-pelu-red`}>100M</div>
-          </div>
-          <div className="w-full sm:w-1/2 lg:w-1/3">
-            <div className={`app-title text-5xl mb-2`}>Tax</div>
-            <div className={`text-3xl font-bold text-pelu-red`}>
-              0% Clean and Concise
-            </div>
-          </div>
-          <div className="w-full sm:w-1/2 lg:w-1/3">
-            <div className={`app-title text-5xl mb-2`}>LP</div>
-            <div className={`text-3xl font-bold text-pelu-red`}>Burned</div>
-          </div>
-        </div>
-      </div>
       <div className="h-24 sm:h-36" />
     </div>
   );

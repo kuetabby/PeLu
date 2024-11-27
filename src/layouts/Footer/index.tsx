@@ -9,7 +9,7 @@ import { CopyrightOutlined } from "@ant-design/icons";
 import { useIsMounted } from "@/hooks/useIsMounted";
 
 import { socialsLink } from "@/constants/links";
-import { misaki } from "@/utils/font";
+import { alice } from "@/utils/font";
 
 // import AppLogo from "@/assets/logo-app.png";
 // import AppBannerNav from "@/assets/banner-nav.png";
@@ -34,16 +34,16 @@ const AppFooter: React.FC<Props> = () => {
   }
 
   return (
-    <footer className={clsx("app-footer", misaki.className)}>
+    <footer className={clsx("app-footer", alice.className)}>
       <div className="app-footer-container">
-        <div className="text-3xl text-center mb-6 z-50 relative">
+        {/* <div className="text-3xl text-center mb-6 z-50 relative">
           <Link
             href={socialsLink.email}
             className="w-auto text-white hover:!text-pelu-red mb-2"
           >
             team@pepelubu.meme
           </Link>
-        </div>
+        </div> */}
 
         <div className="w-full md:w-3/5 flex flex-wrap justify-center items-center text-white m-auto gap-4 z-50 relative">
           <Link

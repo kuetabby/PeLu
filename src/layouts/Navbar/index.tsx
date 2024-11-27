@@ -11,7 +11,7 @@ import clsx from "clsx";
 
 import { useIsMounted } from "@/hooks/useIsMounted";
 
-import { misaki } from "@/utils/font";
+import { alice } from "@/utils/font";
 
 // import PeluNavbar from "@/assets/pelu-navbar.png";
 
@@ -62,7 +62,7 @@ const Navbar: React.FC<Props> = () => {
   // };
 
   return (
-    <div className={clsx("navbar-container", misaki.className)}>
+    <div className={clsx("navbar-container", alice.className)}>
       {/* <div className={clsx(isScroll ? "navbar-scroll" : "navbar")}> */}
       <div className={clsx("navbar")}>
         <Link

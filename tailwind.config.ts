@@ -20,7 +20,7 @@ module.exports = {
         secondary: "#C5D1FF",
 
         "nav-title": "#98FF98",
-        "pelu-red": "#8b2c12",
+        "pelu-red": "#809284",
         "pelu-green": "#578c3c",
 
         "dark-main": "#151515",
@@ -38,7 +38,7 @@ module.exports = {
 
         grayscale: "#111114",
         pelu: "#dab382",
-        "pelu-red": "#8b2c12",
+        "pelu-red": "#809284",
         "pelu-green": "#578c3c",
 
         "nav-scroll": "#DD6B20",
@@ -57,7 +57,7 @@ module.exports = {
         primary: "#385AD3",
         secondary: "#C5D1FF",
 
-        "pelu-red": "#8b2c12",
+        "pelu-red": "#809284",
 
         "dark-main": "#8F8686",
         "light-main": "#D2D6EE",

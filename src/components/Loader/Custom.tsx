@@ -1,5 +1,5 @@
 import React from "react";
-import { misaki } from "@/utils/font";
+import { alice } from "@/utils/font";
 
 import "./style.css";
 
@@ -16,7 +16,7 @@ interface Props {}
 const YinLoader: React.FC<Props> = () => {
   return (
     <div
-      className={`w-full h-screen flex flex-col justify-center items-center mx-auto overflow-hidden ${misaki.className}`}
+      className={`w-full h-screen flex flex-col justify-center items-center mx-auto overflow-hidden ${alice.className}`}
     >
       {/* <div className="w-full h-28 flex items-center justify-center">
         <div className="dot-loader" />

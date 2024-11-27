@@ -1,12 +1,12 @@
-export const contractAddress = "DM417bBjCk8PPoPL64cHwNSEN9hYbRyaRY2pmh6iedna";
+export const contractAddress = "-";
 export const pairAddress = "-";
 
 export const socialsLink = {
   whitepaper: "/",
-  twitter: "https://x.com/PepeLuBuOnSOL",
-  telegram: "https://t.me/Pepe_Lubu",
+  twitter: "https://x.com/",
+  telegram: "https://t.me/",
   medium: "/",
-  email: "mailto:team@pepelubu.meme",
+  email: "mailto:",
 };
 
 export const findUsLink = {

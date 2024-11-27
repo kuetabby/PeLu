@@ -28,7 +28,7 @@ import { useIsMounted } from "@/hooks/useIsMounted";
 import { getHash } from "@/utils/hash";
 import useHash from "@/hooks/useHashname";
 
-import { misaki } from "@/utils/font";
+import { alice } from "@/utils/font";
 
 // import AppTitle from "@/assets/title-app.png";
 // import { findUsLink, socialsLink } from "@/constants/links";
@@ -89,13 +89,13 @@ export const NavbarDrawer: React.FC<Props> = ({ isOpen, onClose }) => {
           className="mt-2 font-extrabold text-red-500"
           style={{ fontSize: 20 }}
         />
-        <DrawerHeader className={`bg-pelu h-24 ${misaki.className}`}>
+        <DrawerHeader className={`bg-pelu h-24 ${alice.className}`}>
           <Link href="/" className={`logo-container text-white h-full`}>
             <div className="font-extrabold text-2xl">PEPELUBU</div>
           </Link>
         </DrawerHeader>
 
-        <DrawerBody className={`bg-pelu ${misaki.className}`}>
+        <DrawerBody className={`bg-pelu ${alice.className}`}>
           <List spacing={3}>
             {tabsList.map((item) => {
               const isActive = !!defaultHash

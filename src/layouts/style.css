@@ -12,7 +12,7 @@
 
 .base-main-container {
   /* @apply w-full h-full min-h-screen bg-black mb-16 sm:mb-0 text-white; */
-  @apply w-full h-full min-h-screen bg-pelu mb-0 text-white;
+  @apply w-full h-full min-h-screen bg-dark-main mb-0 text-white;
   /* @apply w-full h-full min-h-screen mb-0 text-white; */
 }
 

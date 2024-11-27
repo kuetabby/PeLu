@@ -1,5 +1,5 @@
 .app-footer {
-  @apply w-full p-0 text-white bg-pelu relative;
+  @apply w-full p-0 text-white bg-dark-main relative;
 }
 
 .app-footer-wrapper {

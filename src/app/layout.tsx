@@ -7,10 +7,9 @@ import BaseLayout from "@/layouts";
 
 import "./globals.css";
 
-const app_title = "PepeLuBu | $PELU";
-const app_name = "PepeLuBu";
-const description =
-  "$PELU - where the playful charm of Pepe The Frog meets the legendary spirit of LuBu";
+const app_title = "$DRACONIS";
+const app_name = "Draconis";
+const description = "";
 
 export const metadata: Metadata = {
   title: app_title,
