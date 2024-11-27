@@ -107,16 +107,16 @@ const Home: React.FC<Props> = () => {
         <Image
           src={BannerApp}
           alt="pelu-banner"
-          className="w-full h-[100vw] sm:h-[75vw] lg:h-[50vw] xl:h-full"
+          className="w-full h-[50vw] sm:h-[75vw] md:h-[50vw] xl:h-full"
         />
       </div>
 
       <div id="about" className="h-20 sm:h-24 relative z-30" />
       <div ref={aboutRef} className="homepage-body">
-        <div className="text-6xl font-bold text-center text-pelu-red">
+        <div className="text-4xl md:text-6xl font-bold text-center text-pelu-red">
           Draconis
         </div>
-        <div className="sm:mx-4 md:mx-6 lg:mx-10 text-3xl text-center mt-14 mb-10">
+        <div className="sm:mx-4 md:mx-6 lg:mx-10 text-xl md:text-3xl text-center mt-14 mb-10">
           {/* <span className="text-pelu-red font-bold">$DRACONIS</span> where the
           cheeky charisma of Pepe meets the legendary flair of Lu Bu, creating a
           fusion of fun and folklore. */}
@@ -143,15 +143,15 @@ const Home: React.FC<Props> = () => {
           </div>
 
           <div className="w-full lg:w-[47.5%]">
-            <div className="w-full text-3xl mt-4 lg:mt-0">
+            <div className="w-full text-xl md:text-3xl mt-4 lg:mt-0">
               <span className="text-pelu-red font-bold">$DRACONIS</span> could
               be seen as a representation of environmental protection or as a
               cautionary tale about the consequences of greed.
             </div>
             <br />
             <br />
-            <div className="w-full text-3xl">
-              <div className="text-4xl text-center sm:text-left font-bold mb-4">
+            <div className="w-full text-xl md:text-3xl">
+              <div className="text-xl md:text-3xl text-center sm:text-left font-bold mb-4">
                 Join the <span className="text-pelu-red">$DRACONIS</span>{" "}
                 Movement
               </div>
@@ -165,7 +165,7 @@ const Home: React.FC<Props> = () => {
                 href={findUsLink.dexscreener}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-12 hover:!text-primary"
+                className="w-8 md:w-12 hover:!text-primary"
               >
                 <Image
                   src={DexscreenerLogo}
@@ -189,7 +189,7 @@ const Home: React.FC<Props> = () => {
                 href={socialsLink.telegram}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-12 hover:!text-primary"
+                className="w-8 md:w-12 hover:!text-primary"
               >
                 <Image
                   src={TelegramLogo}
@@ -201,7 +201,7 @@ const Home: React.FC<Props> = () => {
                 href={socialsLink.twitter}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-12 hover:text-secondary"
+                className="w-8 md:w-12 hover:!text-primary"
               >
                 <Image
                   src={TwitterLogo}
